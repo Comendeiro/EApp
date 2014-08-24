@@ -4,13 +4,13 @@ library(shiny)
 #Energy Application that estimates de energy consumption of a house in function of the location
 
 #Load the climate data
-clim<-read.csv("helpers/climatedata.csv")
-city<-unique(as.character(clim$city))
-cityindex<-list()
-for (i in 1:length(city)){
-  cityindex[i] = i
-}
-names(cityindex)<-city
+#    clim<-read.csv("www/climatedata.csv")
+#    city<-unique(as.character(clim$city))
+#    cityindex<-list()
+#    for (i in 1:length(city)){
+#      cityindex[i] = i
+#    }
+#    names(cityindex)<-city
 
 # Define UI for application that draws a histogram
 shinyUI(fluidPage(
@@ -21,6 +21,7 @@ shinyUI(fluidPage(
   # New fluid row
   fluidRow(
     h4("INSTRUCTIONS"),
+    h5("WARNING: If you run the app locally works perfectly, however it appears to have trouble with the graphs on the server"),
     p("Welcome to this App created to estimate the energy consumption of a household with a known surface, height and facade area. The energy consumption of the buildings is highly worring nowadays
       and building lower consumption households is key to fight the climate change. In this app the effect of different building parameters
       can be studied for 3 differnt locations. When selecting the location the temperature profile will be updated for this place. The energy consumption per month
@@ -84,6 +85,7 @@ shinyUI(fluidPage(
     mainPanel(
       
       textOutput("t.city"),
+      
       plotOutput("weather"),
       textOutput("t.vol"),
       textOutput("fsurf"),

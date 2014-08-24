@@ -1,4 +1,4 @@
-city,type,Jan,Feb,Mar,Apr,May,Jun,Jul,Aug,Sep,Oct,Nov,Dec
+city,type,Jan,Feb ,Mar,Apr,May,Jun,Jul,Aug,Sep,Oct,Nov,Dec
 London,min,2.6,2.4,4.1,5.4,8.4,11.5,13.9,13.7,11.2,8.3,5.1,2.8
 London,max,8.3,8.5,1.4,14.2,17.7,20.7,23.2,22.9,20.1,15.6,11.4,8.6
 Madrid,min,2.7,3.7,6.2,7.7,11.3,16.1,19,18.8,15.4,10.7,6.3,3.6
